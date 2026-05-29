@@ -34,7 +34,7 @@ This analytics engagement investigates seven interconnected business problems us
 
 | Attribute | Details |
 |---|---|
-| **Source** | DataCo Smart Supply Chain Dataset — Kaggle |
+| **Source** | [DataCo Smart Supply Chain Dataset — Kaggle](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) |
 | **Scope** | Orders, customers, products, shipping, and profitability |
 | **Markets** | Africa, Europe, LATAM, Pacific Asia, USCA |
 | **Key Entities** | Orders, Customers, Products, Departments, Shipping |
