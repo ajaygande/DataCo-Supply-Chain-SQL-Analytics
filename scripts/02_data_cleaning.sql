@@ -576,6 +576,16 @@ Rationale: Canceled orders are a business reality and may
            focus on delivery performance will note where
            canceled orders affect interpretation.
 
+-- DECISION 8 — LATE_DELIVERY_RISK IMPORTED AS BIT
+-- Column   : Late_delivery_risk
+-- Action   : CAST AS INT in all queries referencing this column
+-- Rationale: SSMS CSV import assigned bit datatype to this
+--            column. SUM() and aggregation functions do not
+--            operate on bit in SQL Server. Explicit CAST AS INT
+--            applied in all analysis scripts rather than
+--            ALTER COLUMN to preserve the original import state
+--            and document the issue transparently.
+
 ---------------------------------------------------------------
 SUMMARY: No rows deleted. No values imputed. Two derived
 columns added. Seven data type corrections applied.
