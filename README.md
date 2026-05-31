@@ -83,9 +83,8 @@ would use:     Business Situation → Stakeholder Concern → Business Impact
 | Dataset | DataCo Smart Supply Chain (Kaggle) |
 | Documentation | Markdown |
 
----
-
 ## Repository Structure
+---
 DataCo-Supply-Chain-SQL-Analytics/
 │
 ├── README.md                             ← You are here
