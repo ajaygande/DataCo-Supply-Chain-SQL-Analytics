@@ -117,9 +117,9 @@ DataCo-Supply-Chain-SQL-Analytics/
 │       └── 09_product_category.sql       ← Module 7
 │
 └── findings/
-├── kpi_summary.md                    ← Consolidated KPIs across
-│                                       all seven modules
-└── recommendations.md               ← Full findings and prioritised
+    ├── kpi_summary.md                    ← Consolidated KPIs across
+    │                                        all seven modules
+    └── recommendations.md                ← Full findings and prioritised
 ```
 ---
 
