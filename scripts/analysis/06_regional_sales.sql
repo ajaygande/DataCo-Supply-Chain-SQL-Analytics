@@ -415,3 +415,144 @@ GROUP BY Market, Order_Region
 HAVING COUNT(*) >= 500
 ORDER BY Profit_Margin_Pct DESC;
 GO
+
+-- ============================================================
+-- SECTION 11 — MODULE SUMMARY
+-- ============================================================
+
+/*
+===============================================================
+BUSINESS INSIGHTS — MODULE 4: REGIONAL SALES IMBALANCE
+===============================================================
+
+INSIGHT 1 — 37% OF TOTAL SALES ORIGINATE FROM A SINGLE CITY
+Caguas, Puerto Rico generated $13,610,266.21 in sales from
+66,770 orders — 37% of the company's total revenue. The
+next largest city, Chicago, contributes 2.17%. This level
+of concentration in a single location is commercially
+abnormal and almost certainly reflects a data recording
+issue — such as a default billing address or distribution
+hub — rather than genuine customer demand from one city.
+This finding should be escalated for data governance review
+before any city-level commercial decisions are made.
+
+INSIGHT 2 — EUROPE AND LATAM TOGETHER CONTROL 57.5% OF SALES
+Europe ($10.87M, 29.56%) and LATAM ($10.28M, 27.94%) are
+the two dominant markets, together accounting for more than
+half of total company revenue. Their order volumes are
+nearly identical (50,252 vs 51,594) but Europe generates
+higher average order value ($216.36 vs $199.20), giving it
+a $594,784 sales advantage despite fewer orders. Europe's
+pricing power is the key differentiator between the two
+top markets.
+
+INSIGHT 3 — AFRICA HAS THE HIGHEST MARGIN POTENTIAL BUT
+THE LOWEST INVESTMENT
+Africa contributes just 6.24% of total sales — the smallest
+market — yet its high-margin regions outperform global
+averages. East Africa leads all regions globally with a
+13.97% profit margin, and Southern Africa follows at
+13.51%. These margins exceed Western Europe (10.61%) and
+Central America (10.88%) — the two highest-volume regions.
+Africa is being commercially underserved relative to its
+margin potential.
+
+INSIGHT 4 — NO REGION OPERATES AT A LOSS BUT MARGINS
+ARE DANGEROUSLY UNIFORM
+Profit margins across all 23 regions range from 9.91%
+(Eastern Asia) to 13.51% (Southern Africa) — a spread of
+just 3.6 percentage points globally. This uniformity means
+the business has no high-margin anchor region to cross-
+subsidise underperformers. Every region is margin-thin,
+and a sustained discount event or cost increase in any
+major region could push it into loss territory.
+
+INSIGHT 5 — WITHIN-MARKET CONCENTRATION IS HIGH IN
+EUROPE AND LATAM
+Western Europe generates 54.2% of all European sales from
+54.0% of European orders. Central America generates 55.1%
+of all LATAM sales from 54.9% of LATAM orders. Both markets
+are heavily dependent on a single dominant region. Eastern
+Europe (10.3% margin) and the Caribbean (10.41%) are the
+weakest regions within their respective markets and the
+most likely candidates for commercial review.
+
+INSIGHT 6 — YEAR OVER YEAR DATA REVEALS UNEVEN MARKET
+COVERAGE AND ONE NOTABLE PRICING SHIFT
+The dataset has significant gaps in year coverage per
+market — Africa has no 2015 data, LATAM has no 2016 data,
+USCA has only 118 orders in 2017. These gaps make reliable
+trend analysis impossible at the market level. However,
+one genuine signal stands out: Europe's average order
+value rose from $197.21 in 2015 to $242.13 in 2017 —
+a 22.8% increase — suggesting either a product mix shift
+toward higher-value items or a pricing change in the
+European market worth investigating further.
+
+===============================================================
+RECOMMENDATIONS — MODULE 4: REGIONAL SALES IMBALANCE
+===============================================================
+
+RECOMMENDATION 1 — INVESTIGATE THE CAGUAS DATA ANOMALY
+BEFORE ANY COMMERCIAL ACTION
+The 37% sales concentration in a single city is the most
+urgent finding in this module. The business should
+immediately verify whether Caguas, Puerto Rico reflects
+genuine customer locations or a data recording default.
+If it is a data issue, city-level reporting across the
+entire dataset is unreliable and should be suspended
+until corrected. If it is genuine, the business has
+extreme geographic concentration risk that requires
+a dedicated commercial continuity plan.
+
+RECOMMENDATION 2 — BUILD A COMMERCIAL DEVELOPMENT PLAN
+FOR AFRICA
+Africa's high-margin regions — East Africa (13.97%),
+Southern Africa (13.51%), and West Africa (10.99%) —
+are operating efficiently but at very low volume.
+A targeted commercial development programme in these
+regions, focused on order volume growth rather than
+margin improvement, could generate significant profit
+uplift with lower risk than expanding in already
+saturated high-volume regions.
+
+RECOMMENDATION 3 — INVESTIGATE EUROPE'S 2017 ORDER VALUE
+INCREASE
+Europe's average order value rose 22.8% from 2015 to
+2017. Understanding the driver — product mix, pricing
+policy, customer segment shift, or data composition —
+would allow the business to either protect and replicate
+this improvement or identify whether it reflects a
+temporary anomaly. If driven by product mix, the same
+approach could be applied in LATAM and Pacific Asia
+where average order values have remained flat.
+
+RECOMMENDATION 4 — REVIEW EASTERN ASIA AND OCEANIA
+COMMERCIAL STRATEGY
+Eastern Asia has the lowest profit margin of any region
+at 9.91% on $1,486,401.34 in sales — making it a
+high-revenue, low-return region. Oceania follows at
+9.99% on $2,016,654.20 in sales. Both regions generate
+significant revenue but return margins below the global
+average. A pricing or product mix review in these two
+regions could meaningfully improve Pacific Asia's
+overall margin profile without requiring volume growth.
+
+RECOMMENDATION 5 — ADDRESS DATASET YEAR COVERAGE GAPS
+BEFORE BUILDING TREND-BASED MODELS
+The missing year data per market makes it impossible to
+draw reliable year-over-year conclusions at the market
+level. The data team should investigate and document
+why certain markets have no records in specific years —
+whether due to data entry practices, system migrations,
+or genuine operational gaps — and correct the dataset
+before any time-series forecasting or trend modelling
+is attempted.
+
+===============================================================
+*/
+
+
+-- ============================================================
+-- END OF SCRIPT — 06_regional_sales.sql
+-- ============================================================
