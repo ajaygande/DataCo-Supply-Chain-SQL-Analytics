@@ -294,7 +294,7 @@ download and import instructions.
 
 **Ajay Gande**
 [GitHub](https://github.com/ajaygande) |
-[LinkedIn](https://linkedin.com/in/ajaygande) | 
+[LinkedIn](https://www.linkedin.com/in/ajay-gande) | 
 [Email](ajaygande1@gmail.com)
 
 ---
