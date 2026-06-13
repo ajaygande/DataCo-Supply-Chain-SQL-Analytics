@@ -1,3 +1,4 @@
+![DataCo Supply Chain SQL Analytics](docs/cover.png)
 # DataCo Supply Chain SQL Analytics
 ### Solving Business Problems with SQL
 
